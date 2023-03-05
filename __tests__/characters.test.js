@@ -3,11 +3,10 @@ import Characters from './../src/characters.js';
 describe('Characters', () => {
 
   test('should correctly construct a character object with four character archtypes', () => {
-    const wizard = new Characters("Wizard", 200, 300, "Magic");
-    const warrior = new Characters("Warrior", 500, 80, "Melee");
-    const mage = new Characters("Mage", 100, 90, "Magic");
-    const rogue = new Characters("Rogue", 320, 40, "Ranged");
-    
+    const wizard = ("Wizard");
+    const warrior = ("Warrior");
+    const mage = ("Mage");
+    const rogue = ("Rogue");
     const characters = new Characters(wizard,warrior,mage,rogue);
     expect(characters.wizard).toEqual(wizard);
     expect(characters.warrior).toEqual(warrior);
