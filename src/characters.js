@@ -1,5 +1,9 @@
 export default class Characters {
-  constructor(wizard, warrior, mage, rogue) {
-
+  constructor(name, health, attackPower, archetype) {
+    this.name = name;
+    this.health = health;
+    this.attackPower = attackPower;
+    this.archetype = archetype;
   }
+
 }
