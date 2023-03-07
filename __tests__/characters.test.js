@@ -1,4 +1,4 @@
-import Characters from './../src/characters.js';
+import Characters from '../src/js/characters.js';
 
 describe('Character', () => {
 
