@@ -31,4 +31,9 @@ export default class Characters {
     } else
      return "Unrecognized archetype";
 }
+receiveAttack(damage) {
+  console.log(`Health before attack: ${this.health}`);
+  this.health = Math.max(0, this.health - damage);
+  console.log(`Health after attack: ${this.health}`);
+}
 }

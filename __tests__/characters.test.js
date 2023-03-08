@@ -49,5 +49,10 @@ describe('Character', () => {
   test('should return "Unrecognized archetype" for unknown archetype', () => {
     const characters = new Characters("Will", 400, 300, "ninja");
     expect(characters.getArchetypeCategory()).toEqual("Unrecognized archetype");
+  });
+  test('should update health when character takes damage', () => {
+    const characters = new Characters("Magi", 150, 200, "mage");
+    characters.receiveAttack(50);
+    expect(characters.health).toEqual(100);
   });  
 });
