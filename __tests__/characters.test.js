@@ -55,4 +55,10 @@ describe('Character', () => {
     characters.receiveAttack(50);
     expect(characters.health).toEqual(250); 
   });
+  test('should not reduce health when damage is 0', () => {
+    const characters = new Characters("Wren", 300, 500, "warrior");
+    characters.receiveAttack(0);
+    expect(characters.health).toEqual(300);
+  });
+  
 });
