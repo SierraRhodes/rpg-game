@@ -51,8 +51,8 @@ describe('Character', () => {
     expect(characters.getArchetypeCategory()).toEqual("Unrecognized archetype");
   });
   test('should update health when character takes damage', () => {
-    const characters = new Characters("Magi", 150, 200, "mage");
+    const characters = new Characters("Wren", 300, 500, "warrior");
     characters.receiveAttack(50);
-    expect(characters.health).toEqual(100);
-  });  
+    expect(characters.health).toEqual(250); 
+  });
 });

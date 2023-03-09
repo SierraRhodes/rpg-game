@@ -36,4 +36,4 @@ receiveAttack(damage) {
   this.health = Math.max(0, this.health - damage);
   console.log(`Health after attack: ${this.health}`);
 }
-}
+};
